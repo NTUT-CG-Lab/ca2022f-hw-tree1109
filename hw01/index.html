@@ -52,14 +52,14 @@
   {
       position:absolute;
       top:5%;
-      display:block; 
+      display:block;
       line-height:16px;
       width:45%;
       height:90%;
       background:#fff;
       box-sizing:border-box;
       text-align:center;
-      transition: all 0.3s ease-in 0s; 
+      transition: all 0.3s ease-in 0s;
       color:rgba(159,53,58,1);
       border:#888 1px solid;
       border-radius:3px;
@@ -151,14 +151,14 @@
         background-color: rgba(255, 255, 0, 0.1);
       */
         box-shadow: 0 0 5px 3px #f9eced;
-        color: cyan; 
+        color: cyan;
         text-shadow: 0 0 6px #FFFFFF, 0 0 6px #000000;
     }
 
     img:hover {
-      
+
         box-shadow: 0 0 1px 1px #f9eced;
-      
+
         animation-name: happy;
         animation-duration: 0.5s;
         animation-iteration-count: infinite;
@@ -211,7 +211,13 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次的作業讓我認識到什麼是live2d cubism web sdk，
+      它能夠讓網頁開發者將live2d引入到網頁上，
+      讓網頁開發者能夠將live2d角色呈現在網頁之上。
+      我覺得這樣的開發套件讓開發者又多了一種方式，
+      可以讓網頁變得生動有趣，
+      開發者也能讓使用者與live2d角色互動，
+      讓網站的使用體驗也更有互動性。
     </div>
   </div>
 
@@ -227,7 +233,7 @@
         </tr>
         <tr>
           <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>2</td>
           <td>Simple baseline - 下載 CubismWebSamples</td>
         </tr>
@@ -237,7 +243,7 @@
           <td>Medium baseline - 編譯執行 </td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
           <td>Strong baseline - 更換 Cubism 人物模型、發佈網頁 </td>
         </tr>
@@ -249,7 +255,7 @@
   <div class="row hw12">
     <div class="col-md-12 twenty">
       <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="./live2d_web_mouse_following_demo.mp4" type="video/mp4">
       </video>
     </div>
   </div>
@@ -276,7 +282,7 @@
   d3.select("#myCheckbox7").on("change",update);
 
   update();
-  
+
   function update(){
 
     var score = 0;
@@ -286,14 +292,14 @@
     }
 
     if (d3.select("#myCheckbox2").property("checked")){
-      score += parseInt(d3.select('#m2').html());   
+      score += parseInt(d3.select('#m2').html());
     }
 
     if (d3.select("#myCheckbox3").property("checked")){
-      score += parseInt(d3.select('#m3').html());   
+      score += parseInt(d3.select('#m3').html());
     }
 
-    d3.select("#myTotal").html(score);    
+    d3.select("#myTotal").html(score);
   }
 </script>
 

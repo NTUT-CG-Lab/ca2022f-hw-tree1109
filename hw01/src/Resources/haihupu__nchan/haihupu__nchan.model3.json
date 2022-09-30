@@ -1,0 +1,23 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "haihupu__nchan.moc3",
+		"Textures": [
+			"haihupu__nchan.4096/texture_00.png"
+		],
+		"Physics": "haihupu__nchan.physics3.json",
+		"DisplayInfo": "haihupu__nchan.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}
