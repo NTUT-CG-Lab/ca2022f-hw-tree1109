@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1900" />
+    <title>Computer Animation HW</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-repeat: repeat;
+        background-position: center;
+      }
+      #controller {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        padding: 5px;
+        background: #6a4c9c;
+        color: #fff;
+      }
+      #character {
+        display: inline-block;
+        /* 角色寬高 */
+        /*
+        @Medium Baseline here!
+        藉由調整以下的width和height設定來調整canvas寬高
+        */
+        width: 700px;
+        height: 700px;
+        /* 位置 */
+        transform: scale(1.2); /* same as plus and minus */
+        margin-top: 10%;
+        margin-left: 33%;
+      }
+      button {
+        padding: 8px;
+        font-size: 1.2rem;
+      }
+
+      #backgroundDrag {
+        border-radius: 5px;
+        border: 3px dotted gray;
+        padding: 10px;
+        font-size: 26px;
+        animation-name: sight;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes sight {
+        0% {
+          border-color: gray;
+        }
+        25% {
+          border-color: aqua;
+        }
+        50% {
+          border-color: brown;
+        }
+        100% {
+          border-color: red;
+        }
+      }
+    </style>
+    <!-- Pollyfill script -->
+    <script src="https://unpkg.com/core-js-bundle@3.6.1/minified.js"></script>
+    <!-- Live2DCubismCore script -->
+    <script src="./Core/live2dcubismcore.js"></script>
+    <!-- Build script -->
+    <script src="./dist/bundle.js"></script>
+  </head>
+  <body>
+    <div id="controller">
+      <button id="top">上</button>
+      <button id="down">下</button>
+      <button id="left">左</button>
+      <button id="right">右</button>
+      <button id="plus">放大➕</button>
+      <button id="minus">縮小➖</button>
+      <div class="background-control">
+        <h2>更換背景</h2>
+        <div id="backgroundDrag">拖放背景圖片</div>
+        <input type="file" id="backgroundFile" />
+      </div>
+    </div>
+    <div id="character"></div>
+    <script>
+      // inital background
+      document.body.style.backgroundImage = `url(./images/bg.jpg)`;
+
+      // main program
+      let el = document.querySelector("#character");
+      let elStyle = window.getComputedStyle(el);
+      let x = parseFloat(elStyle.getPropertyValue("margin-top")),
+        y = parseFloat(elStyle.getPropertyValue("margin-left")),
+        scale = 1.2;
+
+      // dont override
+      window.addEventListener("load", () => {
+        update(0, 0, 1);
+      });
+
+      /*
+      @Medium Baseline here!
+      助教會帶你一步一步撰寫以下的程式碼
+      */
+      document.querySelector("#top").addEventListener("click", (e) => {
+        x -= 15;
+        el.style.marginTop = `${x}px`
+      });
+      document.querySelector("#down").addEventListener("click", (e) => {
+        x += 15;
+        el.style.marginTop = `${x}px`
+      });
+      document.querySelector("#right").addEventListener("click", (e) => {
+        y += 15;
+        el.style.marginLeft = `${y}px`
+      });
+      document.querySelector("#left").addEventListener("click", (e) => {
+        y -= 15;
+        el.style.marginLeft = `${y}px`
+      });
+      document.querySelector("#plus").addEventListener("click", (e) => {
+        scale += 0.07;
+        el.style.transform = `scale(${scale})`
+      });
+      document.querySelector("#minus").addEventListener("click", (e) => {
+        scale -= 0.07;
+        el.style.transform = `scale(${scale})`
+      });
+
+      let backgroundDragEL = document.querySelector("#backgroundDrag");
+
+      backgroundDragEL.addEventListener("drop", (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+
+        let files = e.dataTransfer.files; // FileList object.
+        let imagePath = URL.createObjectURL(files[0]);
+        document.body.style.backgroundImage = `url(${imagePath})`;
+      });
+
+      backgroundDragEL.addEventListener("dragover", (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "copy"; // Explicitly show this is a copy.
+      });
+
+      let backgroundFileEL = document.querySelector("#backgroundFile");
+
+      backgroundFileEL.addEventListener("change", (e) => {
+        let files = e.target.files;
+
+        if (files[0]) {
+          let imagePath = URL.createObjectURL(files[0]);
+          document.body.style.backgroundImage = `url(${imagePath})`;
+        }
+      });
+    </script>
+  </body>
+</html>

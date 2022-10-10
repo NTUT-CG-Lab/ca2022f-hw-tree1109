@@ -52,14 +52,14 @@
   {
       position:absolute;
       top:5%;
-      display:block; 
+      display:block;
       line-height:16px;
       width:45%;
       height:90%;
       background:#fff;
       box-sizing:border-box;
       text-align:center;
-      transition: all 0.3s ease-in 0s; 
+      transition: all 0.3s ease-in 0s;
       color:rgba(159,53,58,1);
       border:#888 1px solid;
       border-radius:3px;
@@ -151,14 +151,14 @@
         background-color: rgba(255, 255, 0, 0.1);
       */
         box-shadow: 0 0 5px 3px #f9eced;
-        color: cyan; 
+        color: cyan;
         text-shadow: 0 0 6px #FFFFFF, 0 0 6px #000000;
     }
 
     img:hover {
-      
+
         box-shadow: 0 0 1px 1px #f9eced;
-      
+
         animation-name: happy;
         animation-duration: 0.5s;
         animation-iteration-count: infinite;
@@ -195,7 +195,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <h1>作業 01</h1>
+      <h1>作業 02</h1>
     </div>
   </div>
 
@@ -203,13 +203,22 @@
   <div class="row hw12">
     <div class="col-md-12 twenty">
       作業程式碼，請放在 src 檔案夾。
+      <input type="button" name="back" onclick="parent.location='./src/index.html'" value="...按我...按我...按我...">
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。
+      <p>
+        這次的作業讓我學到如何修改HTML網頁，
+        以及裡面的CSS和JavaScript程式。
+        雖然整體來說只要照著講義提供的程式碼，
+        把缺少的功能補上，
+        但是這樣的好處是可以先熟悉網頁前端程式碼的修改，
+        對於網頁開發沒有經驗的我來說很適合。
+        藉由查看Typescript程式碼，我也稍微認識了一些特有的語法，像是箭頭函式。
+      </p>
     </div>
   </div>
 
@@ -223,41 +232,36 @@
           <th>配分</th>
           <th>分項描述</th>
         </tr>
-        <tr>
+       <tr>
           <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
-          <td id='m1'>1</td>
-          <td>描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
+          <td id='m1'>0</td>
+          <td>Simple Baseline: 下載作業程式並且執行安裝</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>1</td>
-          <td>描述</td>
+          <td>Simple Baseline: 設定畫布寬高</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
-          <td id='m3'>1</td>
-          <td>描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
+          <td id='m3'>3</td>
+          <td>Medium Baseline: 補上對人物的上下左右縮放的程式碼</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
-          <td id='m4'>1</td>
-          <td>描述</td>
+          <td id='m4'>4</td>
+          <td>Medium Baseline: 補上拖拉切換背景的程式碼</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked="checked" ></td>
-          <td id='m5'>2</td>
-          <td>描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked></td>
+          <td id='m5'>1</td>
+          <td>Strong Baseline: 錄製一段1920*1080影片(操控上下左右縮放、換背景)，上傳網頁至github classroom</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox6" checked="checked" /></td>
-          <td id='m6'>2</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox7" checked="checked" /></td>
-          <td id='m7'>2</td>
-          <td>描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox6" checked></td>
+          <td id='m6'>1</td>
+          <td>Strong Baseline: 藉由查看typescript程式碼學習如何調用window.update函數</td>
         </tr>
       </table>
     </div>
@@ -265,10 +269,10 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <div class="col-md-12 twenty d-flex justify-content-center">
+        <video id="video1" style="width:100%;max-width:100%;" controls="">
+            <source src="live2d_web_move.mp4" type="video/mp4">
+        </video>
     </div>
   </div>
 
@@ -290,10 +294,10 @@
   d3.select("#myCheckbox4").on("change",update);
   d3.select("#myCheckbox5").on("change",update);
   d3.select("#myCheckbox6").on("change",update);
-  d3.select("#myCheckbox7").on("change",update);
+  //d3.select("#myCheckbox7").on("change",update);
 
   update();
-  
+
   function update(){
 
     var score = 0;
@@ -303,30 +307,30 @@
     }
 
     if (d3.select("#myCheckbox2").property("checked")){
-      score += parseInt(d3.select('#m2').html());   
+      score += parseInt(d3.select('#m2').html());
     }
 
     if (d3.select("#myCheckbox3").property("checked")){
-      score += parseInt(d3.select('#m3').html());   
+      score += parseInt(d3.select('#m3').html());
     }
 
     if (d3.select("#myCheckbox4").property("checked")){
-      score += parseInt(d3.select('#m4').html());   
+      score += parseInt(d3.select('#m4').html());
     }
 
     if (d3.select("#myCheckbox5").property("checked")){
-      score += parseInt(d3.select('#m5').html());   
+      score += parseInt(d3.select('#m5').html());
     }
 
     if (d3.select("#myCheckbox6").property("checked")){
-      score += parseInt(d3.select('#m6').html());   
+      score += parseInt(d3.select('#m6').html());
     }
 
-    if (d3.select("#myCheckbox7").property("checked")){
-      score += parseInt(d3.select('#m7').html());   
-    }
+    // if (d3.select("#myCheckbox7").property("checked")){
+    //   score += parseInt(d3.select('#m7').html());
+    // }
 
-    d3.select("#myTotal").html(score);    
+    d3.select("#myTotal").html(score);
   }
 </script>
 
