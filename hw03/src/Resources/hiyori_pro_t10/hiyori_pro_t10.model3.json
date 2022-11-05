@@ -1,0 +1,61 @@
+{
+    "Version": 3,
+    "FileReferences": {
+        "Moc": "hiyori_pro_t10.moc3",
+        "Textures": [
+            "hiyori_pro_t10.2048/texture_00.png",
+            "hiyori_pro_t10.2048/texture_01.png"
+        ],
+        "Physics": "hiyori_pro_t10.physics3.json",
+        "Pose": "hiyori_pro_t10.pose3.json",
+        "DisplayInfo": "hiyori_pro_t10.cdi3.json",
+        "Motions": {
+            "Idle": [
+                {
+                    "File": "motion/hiyori_m02.motion3.json"
+                }
+            ],
+            "TapBody": [
+                {
+                    "File": "motion/hiyori_m01.motion3.json",
+                    "Sound": "sounds/「あれっ？」.mp3"
+                },
+                {
+                    "File": "motion/hiyori_m05.motion3.json",
+                    "Sound": "sounds/「ん～？」.mp3"
+                },
+                {
+                    "File": "motion/hiyori_m06.motion3.json",
+                    "Sound": "sounds/「よっ！」.mp3"
+                },
+                {
+                    "File": "motion/hiyori_m08.motion3.json",
+                    "Sound": "sounds/「えへへ…」.mp3"
+                }
+            ]
+        }
+    },
+    "Groups": [
+        {
+            "Target": "Parameter",
+            "Name": "LipSync",
+            "Ids": [
+                "ParamMouthOpenY"
+            ]
+        },
+        {
+            "Target": "Parameter",
+            "Name": "EyeBlink",
+            "Ids": [
+                "ParamEyeLOpen",
+                "ParamEyeROpen"
+            ]
+        }
+    ],
+    "HitAreas": [
+    {
+            "Id": "HitArea",
+            "Name": "Body"
+        }
+    ]
+}
