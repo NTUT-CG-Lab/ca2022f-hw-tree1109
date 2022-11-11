@@ -1,0 +1,691 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "Param_Angle_Rotation_5_ArtMesh77",
+			"GroupId": "",
+			"Name": "[4]ｹﾏｼh 2"
+		},
+		{
+			"Id": "Param_Angle_Rotation_4_ArtMesh77",
+			"GroupId": "",
+			"Name": "[3]ｹﾏｼh 2"
+		},
+		{
+			"Id": "Param_Angle_Rotation_3_ArtMesh77",
+			"GroupId": "",
+			"Name": "[2]ｹﾏｼh 2"
+		},
+		{
+			"Id": "Param_Angle_Rotation_2_ArtMesh77",
+			"GroupId": "",
+			"Name": "[1]ｹﾏｼh 2"
+		},
+		{
+			"Id": "Param_Angle_Rotation_1_ArtMesh77",
+			"GroupId": "",
+			"Name": "[0]ｹﾏｼh 2"
+		},
+		{
+			"Id": "Param104",
+			"GroupId": "ParamGroup10",
+			"Name": "親指"
+		},
+		{
+			"Id": "Param111",
+			"GroupId": "ParamGroup10",
+			"Name": "中指"
+		},
+		{
+			"Id": "Param102",
+			"GroupId": "ParamGroup10",
+			"Name": "無名指"
+		},
+		{
+			"Id": "Param103",
+			"GroupId": "ParamGroup10",
+			"Name": "小指"
+		},
+		{
+			"Id": "Param100",
+			"GroupId": "ParamGroup10",
+			"Name": "食指"
+		},
+		{
+			"Id": "Param105",
+			"GroupId": "ParamGroup10",
+			"Name": "手angle x"
+		},
+		{
+			"Id": "Param107",
+			"GroupId": "ParamGroup10",
+			"Name": "手腕 angle z"
+		},
+		{
+			"Id": "Param108",
+			"GroupId": "ParamGroup10",
+			"Name": "手角度y"
+		},
+		{
+			"Id": "Param106",
+			"GroupId": "ParamGroup10",
+			"Name": "手角度x"
+		},
+		{
+			"Id": "Param120",
+			"GroupId": "ParamGroup11",
+			"Name": "右手拇指"
+		},
+		{
+			"Id": "Param121",
+			"GroupId": "ParamGroup11",
+			"Name": "右手中指"
+		},
+		{
+			"Id": "Param122",
+			"GroupId": "ParamGroup11",
+			"Name": "右手無名指"
+		},
+		{
+			"Id": "Param123",
+			"GroupId": "ParamGroup11",
+			"Name": "右手小指"
+		},
+		{
+			"Id": "Param124",
+			"GroupId": "ParamGroup11",
+			"Name": "右手食指"
+		},
+		{
+			"Id": "Param125",
+			"GroupId": "ParamGroup11",
+			"Name": "右手角度x"
+		},
+		{
+			"Id": "Param126",
+			"GroupId": "ParamGroup11",
+			"Name": "右手角度y"
+		},
+		{
+			"Id": "Param127",
+			"GroupId": "ParamGroup11",
+			"Name": "右手手腕"
+		},
+		{
+			"Id": "Param128",
+			"GroupId": "ParamGroup11",
+			"Name": "手腕z"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "Param_Angle_Rotation_5_ArtMesh68",
+			"GroupId": "ParamGroup",
+			"Name": "[4]ｹﾏｼh 2"
+		},
+		{
+			"Id": "Param_Angle_Rotation_4_ArtMesh68",
+			"GroupId": "ParamGroup",
+			"Name": "[3]ｹﾏｼh 2"
+		},
+		{
+			"Id": "Param_Angle_Rotation_3_ArtMesh68",
+			"GroupId": "ParamGroup",
+			"Name": "[2]ｹﾏｼh 2"
+		},
+		{
+			"Id": "Param_Angle_Rotation_2_ArtMesh68",
+			"GroupId": "ParamGroup",
+			"Name": "[1]ｹﾏｼh 2"
+		},
+		{
+			"Id": "Param_Angle_Rotation_1_ArtMesh68",
+			"GroupId": "ParamGroup",
+			"Name": "[0]ｹﾏｼh 2"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "左眼　开闭"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "",
+			"Name": "左眼　微笑"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "右眼"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "",
+			"Name": "右眼　微笑"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "眼球 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "眼球 Y"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "",
+			"Name": "左眉上下"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "眉毛變形"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "",
+			"Name": "右眉　上下"
+		},
+		{
+			"Id": "ParamBrowLX",
+			"GroupId": "",
+			"Name": "左眉　左右"
+		},
+		{
+			"Id": "ParamBrowRX",
+			"GroupId": "",
+			"Name": "右眉　左右"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "嘴部　变形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "嘴巴　张开和闭合"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "",
+			"Name": "左眉　角度"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "",
+			"Name": "右眉　角度"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "",
+			"Name": "左眉　変形"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "",
+			"Name": "右眉　変形"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "",
+			"Name": "脸颊"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "",
+			"Name": "身体旋转　X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "",
+			"Name": "身体旋转　Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "",
+			"Name": "身体旋转　Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "摇动　前发"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "前法1"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "摇动　侧发"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "測法2"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "",
+			"Name": "內測法"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "",
+			"Name": "毛1"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "",
+			"Name": "毛2"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "摇动　后发"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "",
+			"Name": "毛3"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "",
+			"Name": "耳朵1"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "",
+			"Name": "爾多2"
+		},
+		{
+			"Id": "Param10",
+			"GroupId": "",
+			"Name": "繩子"
+		},
+		{
+			"Id": "Param11",
+			"GroupId": "",
+			"Name": "繩子2"
+		},
+		{
+			"Id": "Param12",
+			"GroupId": "",
+			"Name": "繩子3"
+		},
+		{
+			"Id": "Param13",
+			"GroupId": "",
+			"Name": "手"
+		},
+		{
+			"Id": "Param14",
+			"GroupId": "",
+			"Name": "黑話"
+		},
+		{
+			"Id": "Param15",
+			"GroupId": "",
+			"Name": "臉紅"
+		},
+		{
+			"Id": "Param16",
+			"GroupId": "",
+			"Name": "眼淚"
+		},
+		{
+			"Id": "Param17",
+			"GroupId": "",
+			"Name": "短瀏海"
+		},
+		{
+			"Id": "Param18",
+			"GroupId": "",
+			"Name": "常鬢角"
+		},
+		{
+			"Id": "Param19",
+			"GroupId": "",
+			"Name": "短鬢角1"
+		},
+		{
+			"Id": "Param20",
+			"GroupId": "",
+			"Name": "短鬢角2"
+		},
+		{
+			"Id": "Param22",
+			"GroupId": "",
+			"Name": "長後法"
+		},
+		{
+			"Id": "Param23",
+			"GroupId": "",
+			"Name": "常馬尾1"
+		},
+		{
+			"Id": "Param24",
+			"GroupId": "",
+			"Name": "單馬尾"
+		},
+		{
+			"Id": "Param25",
+			"GroupId": "",
+			"Name": "無馬尾"
+		},
+		{
+			"Id": "Param26",
+			"GroupId": "",
+			"Name": "短馬尾"
+		},
+		{
+			"Id": "Param21",
+			"GroupId": "",
+			"Name": "左手"
+		},
+		{
+			"Id": "Param27",
+			"GroupId": "",
+			"Name": "右手"
+		},
+		{
+			"Id": "Param28",
+			"GroupId": "",
+			"Name": "衣服上下"
+		},
+		{
+			"Id": "Param29",
+			"GroupId": "",
+			"Name": "眼鏡"
+		},
+		{
+			"Id": "Param30",
+			"GroupId": "",
+			"Name": "球球晃動"
+		},
+		{
+			"Id": "Param31",
+			"GroupId": "",
+			"Name": "帽子"
+		},
+		{
+			"Id": "Param32",
+			"GroupId": "",
+			"Name": "水藍色衣服"
+		},
+		{
+			"Id": "Param33",
+			"GroupId": "",
+			"Name": "包包"
+		},
+		{
+			"Id": "Param_Angle_Rotation_1_ArtMesh123",
+			"GroupId": "ParamGroup3",
+			"Name": "[0]尾巴"
+		},
+		{
+			"Id": "Param_Angle_Rotation_2_ArtMesh123",
+			"GroupId": "ParamGroup3",
+			"Name": "[1]尾巴"
+		},
+		{
+			"Id": "Param_Angle_Rotation_3_ArtMesh123",
+			"GroupId": "ParamGroup3",
+			"Name": "[2]尾巴"
+		},
+		{
+			"Id": "Param_Angle_Rotation_4_ArtMesh123",
+			"GroupId": "ParamGroup3",
+			"Name": "[3]尾巴"
+		},
+		{
+			"Id": "Param_Angle_Rotation_5_ArtMesh123",
+			"GroupId": "ParamGroup3",
+			"Name": "[4]尾巴"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup10",
+			"GroupId": "",
+			"Name": "Folder 1"
+		},
+		{
+			"Id": "ParamGroup11",
+			"GroupId": "",
+			"Name": "Folder 2"
+		},
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "ｹﾏｼh 2"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "ｹﾏｼh 2"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "尾巴"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part35",
+			"Name": "尾巴.png"
+		},
+		{
+			"Id": "Part33",
+			"Name": "部件44"
+		},
+		{
+			"Id": "Part30",
+			"Name": "插圖3.png"
+		},
+		{
+			"Id": "Part31",
+			"Name": "ｹﾏｼh 2(回转)"
+		},
+		{
+			"Id": "Part29",
+			"Name": "部件38"
+		},
+		{
+			"Id": "Part28",
+			"Name": "部件37"
+		},
+		{
+			"Id": "Part19",
+			"Name": "插圖2.png"
+		},
+		{
+			"Id": "Part",
+			"Name": "ｸ�ｮﾆｧｨ 3"
+		},
+		{
+			"Id": "Part5",
+			"Name": "ｸ�ｮﾆｧｨ 7"
+		},
+		{
+			"Id": "Part7",
+			"Name": "ｸ�ｮﾆｧｨ 2 ｪｺｽﾆｻs"
+		},
+		{
+			"Id": "Part15",
+			"Name": "ｸ�ｮﾆｧｨ 10"
+		},
+		{
+			"Id": "ArtMesh77_Skinning",
+			"Name": "ｹﾏｼh 2(蒙皮)"
+		},
+		{
+			"Id": "Part32",
+			"Name": "ｹﾏｼh 2(回转)"
+		},
+		{
+			"Id": "ArtMesh68_Skinning2",
+			"Name": "ｹﾏｼh 2(蒙皮)"
+		},
+		{
+			"Id": "Part6",
+			"Name": "ｸ�ｮﾆｧｨ 11"
+		},
+		{
+			"Id": "Part10",
+			"Name": "ｸ�ｮﾆｧｨ 2"
+		},
+		{
+			"Id": "Part13",
+			"Name": "ｸ�ｮﾆｧｨ 1 ｪｺｽﾆｻs"
+		},
+		{
+			"Id": "Part14",
+			"Name": "ｸ�ｮﾆｧｨ 1"
+		},
+		{
+			"Id": "Part16",
+			"Name": "ｸ�ｮﾆｧｨ 12"
+		},
+		{
+			"Id": "Part17",
+			"Name": "ｸ�ｮﾆｧｨ 4"
+		},
+		{
+			"Id": "ArtMesh123_Skinning",
+			"Name": "尾巴(蒙皮)"
+		},
+		{
+			"Id": "Part36",
+			"Name": "尾巴(回转)"
+		},
+		{
+			"Id": "Part34",
+			"Name": "部件45"
+		},
+		{
+			"Id": "Part2",
+			"Name": "ｸ�ｮﾆｧｨ 8"
+		},
+		{
+			"Id": "Part3",
+			"Name": "ｸ�ｮﾆｧｨ 9 ｪｺｽﾆｻs"
+		},
+		{
+			"Id": "Part4",
+			"Name": "ｸ�ｮﾆｧｨ 9"
+		},
+		{
+			"Id": "Part8",
+			"Name": "ｸ�ｮﾆｧｨ 5 ｪｺｽﾆｻs"
+		},
+		{
+			"Id": "Part11",
+			"Name": "ｸ�ｮﾆｧｨ 5"
+		},
+		{
+			"Id": "ArtMesh85_Skinning2",
+			"Name": "�D胡 53(蒙皮)"
+		},
+		{
+			"Id": "Part27",
+			"Name": "�D胡 53(回转)"
+		},
+		{
+			"Id": "ArtMesh85_Skinning",
+			"Name": "�D胡 53(蒙皮)"
+		},
+		{
+			"Id": "Part26",
+			"Name": "�D胡 53(回转)"
+		},
+		{
+			"Id": "ArtMesh105_Skinning",
+			"Name": "�D胡 45(蒙皮)"
+		},
+		{
+			"Id": "Part23",
+			"Name": "�D胡 45(回转)"
+		},
+		{
+			"Id": "ArtMesh67_Skinning",
+			"Name": "�D胡 45(蒙皮)"
+		},
+		{
+			"Id": "Part22",
+			"Name": "�D胡 45(回转)"
+		},
+		{
+			"Id": "ArtMesh73_Skinning",
+			"Name": "長髮(蒙皮)"
+		},
+		{
+			"Id": "Part25",
+			"Name": "長髮(回转)"
+		},
+		{
+			"Id": "ArtMesh68_Skinning",
+			"Name": "�D胡 43(蒙皮)"
+		},
+		{
+			"Id": "Part21",
+			"Name": "�D胡 43(回转)"
+		},
+		{
+			"Id": "ArtMesh63_Skinning",
+			"Name": "�D胡 43(蒙皮)"
+		},
+		{
+			"Id": "Part20",
+			"Name": "�D胡 43(回转)"
+		},
+		{
+			"Id": "Part18",
+			"Name": "ｹﾏｼh 19(回转)"
+		},
+		{
+			"Id": "ArtMesh71_Skinning",
+			"Name": "�D胡 43 ｵﾄﾑ}ﾑu 2(蒙皮)"
+		},
+		{
+			"Id": "Part24",
+			"Name": "�D胡 43 ｵﾄﾑ}ﾑu 2(回转)"
+		},
+		{
+			"Id": "ArtMesh75_Skinning",
+			"Name": "ｹﾏｼh 19(蒙皮)"
+		},
+		{
+			"Id": "Part9",
+			"Name": "ｸ�ｮﾆｧｨ 6 ｪｺｽﾆｻs"
+		},
+		{
+			"Id": "Part12",
+			"Name": "ｸ�ｮﾆｧｨ 6"
+		}
+	]
+}
