@@ -52,14 +52,14 @@
   {
       position:absolute;
       top:5%;
-      display:block; 
+      display:block;
       line-height:16px;
       width:45%;
       height:90%;
       background:#fff;
       box-sizing:border-box;
       text-align:center;
-      transition: all 0.3s ease-in 0s; 
+      transition: all 0.3s ease-in 0s;
       color:rgba(159,53,58,1);
       border:#888 1px solid;
       border-radius:3px;
@@ -151,14 +151,14 @@
         background-color: rgba(255, 255, 0, 0.1);
       */
         box-shadow: 0 0 5px 3px #f9eced;
-        color: cyan; 
+        color: cyan;
         text-shadow: 0 0 6px #FFFFFF, 0 0 6px #000000;
     }
 
     img:hover {
-      
+
         box-shadow: 0 0 1px 1px #f9eced;
-      
+
         animation-name: happy;
         animation-duration: 0.5s;
         animation-iteration-count: infinite;
@@ -195,7 +195,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <h1>作業 01</h1>
+      <h1>作業 04</h1>
     </div>
   </div>
 
@@ -203,13 +203,19 @@
   <div class="row hw12">
     <div class="col-md-12 twenty">
       作業程式碼，請放在 src 檔案夾。
+      <input type="button" name="back" onclick="parent.location='./src/index.html'" value="...按我...按我...按我...">
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。
+      這次的作業做起來比較容易，只需要照者講義上操作輸入對應的指令就可以成功了，
+      Strong baseline編譯建置upload_video實際上的操作，
+      就跟前面步驟的編譯建置live_video是一樣的，也是很簡單。
+      這次作業我覺得有趣的地方是，原來現在用網頁就可以做到這樣的臉部追蹤，
+      我看幾年前為了達到臉部追蹤都是要用像FaceRig這一類的臉部追蹤軟體才可以做得到，
+      但是現在用瀏覽器也可以做到差不多的功能。
     </div>
   </div>
 
@@ -224,40 +230,25 @@
           <th>分項描述</th>
         </tr>
         <tr>
-          <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
-          <td id='m1'>1</td>
-          <td>描述</td>
+          <td rowspan="4" id="myTotal"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
+          <td id='m1'>4</td>
+          <td>下載專案成功編譯</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
-          <td id='m2'>1</td>
-          <td>描述</td>
+          <td id='m2'>3</td>
+          <td>將編譯好的檔案放到github class room上的hw04，並且網頁上能夠成功使用。</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>1</td>
-          <td>描述</td>
+          <td>錄製一段live_video的Demo影片(1920*1080)</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
-          <td id='m4'>1</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked="checked" ></td>
-          <td id='m5'>2</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox6" checked="checked" /></td>
-          <td id='m6'>2</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox7" checked="checked" /></td>
-          <td id='m7'>2</td>
-          <td>描述</td>
+          <td id='m4'>2</td>
+          <td>成功編譯建置upload_video並且錄製Demo影片(1920*1080)</td>
         </tr>
       </table>
     </div>
@@ -267,7 +258,7 @@
   <div class="row hw12">
     <div class="col-md-12 twenty">
       <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="face_landmarks_detection_demo.mp4" type="video/mp4">
       </video>
     </div>
   </div>
@@ -288,12 +279,9 @@
   d3.select("#myCheckbox2").on("change",update);
   d3.select("#myCheckbox3").on("change",update);
   d3.select("#myCheckbox4").on("change",update);
-  d3.select("#myCheckbox5").on("change",update);
-  d3.select("#myCheckbox6").on("change",update);
-  d3.select("#myCheckbox7").on("change",update);
 
   update();
-  
+
   function update(){
 
     var score = 0;
@@ -303,30 +291,18 @@
     }
 
     if (d3.select("#myCheckbox2").property("checked")){
-      score += parseInt(d3.select('#m2').html());   
+      score += parseInt(d3.select('#m2').html());
     }
 
     if (d3.select("#myCheckbox3").property("checked")){
-      score += parseInt(d3.select('#m3').html());   
+      score += parseInt(d3.select('#m3').html());
     }
 
     if (d3.select("#myCheckbox4").property("checked")){
-      score += parseInt(d3.select('#m4').html());   
+      score += parseInt(d3.select('#m4').html());
     }
 
-    if (d3.select("#myCheckbox5").property("checked")){
-      score += parseInt(d3.select('#m5').html());   
-    }
-
-    if (d3.select("#myCheckbox6").property("checked")){
-      score += parseInt(d3.select('#m6').html());   
-    }
-
-    if (d3.select("#myCheckbox7").property("checked")){
-      score += parseInt(d3.select('#m7').html());   
-    }
-
-    d3.select("#myTotal").html(score);    
+    d3.select("#myTotal").html(score);
   }
 </script>
 
