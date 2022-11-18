@@ -1,0 +1,203 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "左目　開閉"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "",
+			"Name": "左目　笑顔"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "右目　開閉"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "",
+			"Name": "右目　笑顔"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "目玉 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "目玉 Y"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "",
+			"Name": "左眉　上下"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "",
+			"Name": "左眉　変形"
+		},
+		{
+			"Id": "ParamBrowLX",
+			"GroupId": "",
+			"Name": "左眉　左右"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "",
+			"Name": "左眉　角度"
+		},
+		{
+			"Id": "ParamBrowRX",
+			"GroupId": "",
+			"Name": "右眉　左右"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "",
+			"Name": "右眉　上下"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "",
+			"Name": "右眉　変形"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "",
+			"Name": "右眉　角度"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "口　変形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "口　開閉"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "Param_Angle_Rotation4",
+			"GroupId": "ParamGroup",
+			"Name": "[0]りぼん"
+		},
+		{
+			"Id": "Param_Angle_Rotation5",
+			"GroupId": "ParamGroup2",
+			"Name": "[0]すかと"
+		},
+		{
+			"Id": "Param_Angle_Rotation6",
+			"GroupId": "ParamGroup3",
+			"Name": "[0]前髪"
+		},
+		{
+			"Id": "Param_Angle_Rotation7",
+			"GroupId": "ParamGroup4",
+			"Name": "[0]よこげ１"
+		},
+		{
+			"Id": "Param_Angle_Rotation8",
+			"GroupId": "ParamGroup5",
+			"Name": "[0]よこげ２"
+		},
+		{
+			"Id": "Param_Angle_Rotation9",
+			"GroupId": "ParamGroup6",
+			"Name": "[0]うしろげ"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "りぼん"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "すかと"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "前髪"
+		},
+		{
+			"Id": "ParamGroup4",
+			"GroupId": "",
+			"Name": "よこげ１"
+		},
+		{
+			"Id": "ParamGroup5",
+			"GroupId": "",
+			"Name": "よこげ２"
+		},
+		{
+			"Id": "ParamGroup6",
+			"GroupId": "",
+			"Name": "うしろげ"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part5",
+			"Name": "まゆ"
+		},
+		{
+			"Id": "Part6",
+			"Name": "ねこ"
+		},
+		{
+			"Id": "Part2",
+			"Name": "がんめん"
+		},
+		{
+			"Id": "Part",
+			"Name": "からだぁ"
+		},
+		{
+			"Id": "Part7",
+			"Name": "かみ"
+		},
+		{
+			"Id": "Part3",
+			"Name": "めめ"
+		},
+		{
+			"Id": "Part4",
+			"Name": "くち"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamAngleX",
+			"ParamAngleY"
+		]
+	]
+}

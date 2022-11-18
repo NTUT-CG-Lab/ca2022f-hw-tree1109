@@ -1,0 +1,65 @@
+body{
+    background-color: aquamarine;
+}
+
+.fpsArea{
+    display: none;
+}
+
+.display-3dArea{
+    /*display: inline-block;*/
+    display: none !important;
+    margin-right: 50px;
+}
+
+#video-player{
+    display: none;
+}
+
+.video-sourceArea{
+    display: none;
+    margin-bottom: 10px;
+}
+
+#video-preview{
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+}
+
+.video-view{
+    display: inline-block;
+}
+
+.mainbodyArea{
+    display: flex;
+    justify-content: center;
+}
+
+canvas.live2D{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    pointer-events: none;
+}
+.canvas-container{
+    padding: 30px;
+    display: inline-block;
+    /*position: fixed;
+    bottom:0;
+    right:0; */
+}
+
+
+div.character{
+    width: 1100px;
+    height: 900px;
+    border: 0px black solid;
+    border-radius: 10px;
+    background-color: aquamarine;
+    display: inline-block;
+}
